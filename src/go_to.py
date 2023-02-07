@@ -31,8 +31,8 @@ class go_to:
         return self.__theta() - self.car.orient()
 
     def go_to(self):
-        robot_speed = 20
-        orientation_kp = 20
+        robot_speed = 25
+        orientation_kp = 25
         if self.__dist() < 0.1:
             self.comm.move(self.id, self.team, 0,0)
         else:
